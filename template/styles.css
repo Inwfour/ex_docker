@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@200&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap'); */
+/* @import url(font/thsarabunnew.css); */
+body {
+	font-family: 'Sarabun', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  margin: 0px;
+}
+/* @font-face {
+  font-family: "THSarabunNew";
+  src:
+  url("font/THSarabunNew.ttf") format("truetype"),
+  } */
+
+.page-container {
+  /* width: 11.00in;
+  height: 8.50in; */
+  width: 842px;
+  height: 595px;
+}
+
+.page-header {
+  position: relative;
+  top: 105px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.table-container {
+  width: 95%;
+  padding-top: 125px;
+  text-align: center;
+  margin: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #000000;
+  text-align: center;
+  padding: 1.75px 1px;
+}
+
+td:not(:first-child), th:not(:first-child) {
+  width: 6.25%;
+}
+
+td {
+  font-size: 11px;
+  font-weight: 200;
+}
+
+th {
+  vertical-align: top;
+  font-size: 9.5px;
+  font-weight: 400;
+}
+
+tr.sub-header th {
+  font-size: 8px;
+}
+
+.footer-container {
+  width: 95%;
+  margin: 12px auto;
+  position: relative;
+  top: 80px;
+}
+
+.footer-item {
+  font-size: 10px;
+  vertical-align: top;
+  display: inline-block;
+  font-weight: 200;
+  position: relative;
+  line-height: 1.5;
+}
+
+.footer-item span {
+  width: 100%;
+  margin-right: 14px
+}
+
+.footer-item.left {
+  text-align: left;
+  width: 20%;
+  left: 5%;
+}
+
+.footer-item.center {
+  text-align: left;
+  width: 55%;
+}
+
+.footer-item.right {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  width: 20%;
+  left: 1%
+}
