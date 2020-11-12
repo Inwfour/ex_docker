@@ -9,21 +9,21 @@ var options = { format: 'Letter' };
 /* GET home page. */
 router.get('/export/:id', function(req, res, next) {
   try {
-    let pathJoin = path.resolve('.').split("\\").join("/")
+    // let pathJoin = path.resolve('.').split("\\").join("/")
     let options = {
       "format": "A4",        // allowed units: A3, A4, A5, Legal, Letter, Tabloid
       "orientation": "landscape", // portrait or landscape
   // width:'297mm',
   // height:'210mm',
   // base: "file://"+path.join(__dirname,'/'),
-  base: "file://" + pathJoin + "/template/",
+  base: "file://" + __dirname + "/template/",
     };
     console.log(options);
     pdf.create(html, options).toFile('templatehtml111.pdf', function(err, res) {
       if (err) return console.log(err);
       console.log(res); // { filename: '/app/businesscard.pdf' }
     })
-    res.send('html-pdf')
+    res.send('html-pdfddddddd')
   } catch (error) {
     console.log(error)
   }
